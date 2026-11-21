@@ -194,7 +194,7 @@
         </div>
         <div class="col-lg-6 col-12 mb-4">
           <h3>Cards</h3>
-          <div class="card h-100 border-0 shadow rounded-4 p-4">
+          <div class="card border-0 shadow rounded-4 p-4">
             <span class="icon-circle">📱</span>
             <h3>Card title</h3>
             <p>White box, blue top border, 18px rounded corners, soft shadow and an icon in a light-blue circle.</p>
@@ -261,7 +261,7 @@
         <thead class="table-dark"><tr><th>AI tool</th><th>Purpose of usage</th><th>Expected outcome</th></tr></thead>
         <tbody>
           <tr><td>Claude</td><td>Planning, requirements, style guide, content drafting, code help and explanations</td><td>A clear plan and working, well-structured code that we understand</td></tr>
-          <tr><td>ChatGPT</td><td>Creating images, learning Bootstrap components and CSS styling that go beyond the course slides, and drafting scam-awareness content</td><td>Realistic photos that suit our audience, example code we can understand and adapt, and a first draft of simple safety tips</td></tr>
+          <tr><td>ChatGPT</td><td>Creating images, learning Bootstrap, CSS and JavaScript techniques that go beyond the course slides, researching accessibility and privacy, and drafting scam-awareness content</td><td>Realistic photos that suit our audience, example code we can understand and adapt, and a first draft of simple safety tips</td></tr>
           <tr><td>GitHub Copilot (in VS Code)</td><td>Code suggestions while writing JavaScript: the phone simulator and the email check</td><td>Faster coding, with every suggestion tested and changed by us</td></tr>
         </tbody>
       </table>
@@ -304,6 +304,134 @@
               <td>"Create a realistic photo of a smiling older Bahraini man using his smartphone at home." We wrote a similar prompt for each topic: phone calls, WhatsApp, video calls, photos, government services, online banking, appointments and scams.</td>
               <td>Nine realistic photos (hero.jpg, phone-call.jpg, whatsapp.jpg, video-call.jpg, photo.jpg, government.jpg, banking.jpg, appointment.jpg, scam.jpg)</td>
               <td>We chose the images that best matched each topic, cropped them into circles with CSS, wrote our own alt text, and labelled them as AI-generated in the credits.</td></tr>
+          <tr><td>ChatGPT</td><td>Bootstrap alert boxes (not covered in the slides)</td>
+              <td>"How do I make coloured message boxes in Bootstrap?"</td>
+              <td>Examples of <code>alert-info</code>, <code>alert-warning</code> and <code>alert-success</code></td>
+              <td>We used them for tips, scam warnings and the registration success message, and changed their colours in style.css to match our palette, with a thick coloured line on the left.</td></tr>
+          <tr><td>ChatGPT</td><td>Form field focus style</td>
+              <td>"How do I make a form field show a blue border when the user clicks in it?"</td>
+              <td>CSS using the <code>:focus</code> selector</td>
+              <td>We used our primary blue #02A9F7 for the border and added a soft light-blue glow so older users can clearly see which field they are typing in.</td></tr>
+          <tr><td>ChatGPT</td><td>Highlighting the next button in the simulator</td>
+              <td>"How do I highlight a button with a border that doesn't change its size?"</td>
+              <td>An explanation of the CSS <code>outline</code> property</td>
+              <td>We made a <code>tap-here</code> class with a 4px amber outline (#F5B700) and moved it from button to button so users always know what to tap next.</td></tr>
+          <tr><td>ChatGPT</td><td>Drawing a phone shape in CSS</td>
+              <td>"How do I draw a phone shape in CSS so content stays inside it?"</td>
+              <td>CSS with a fixed width and height, <code>border-radius</code> and <code>overflow: hidden</code></td>
+              <td>We set our own size (300 by 580px), used our navy colour for the frame and added a blue ring so the phone stands out on the page.</td></tr>
+          <tr><td>ChatGPT</td><td>Jump link to the registration form</td>
+              <td>"How do I make a button scroll down to a form on the same page?"</td>
+              <td>A link to an id, for example <code>href="#register"</code></td>
+              <td>We gave the form section the id <code>register</code> and linked both the home page hero button and the Stay Safe Online button to it.</td></tr>
+          <tr><td>ChatGPT</td><td>Meta description tag</td>
+              <td>"What is a meta description and why do websites need one?"</td>
+              <td>An explanation of <code>&lt;meta name="description"&gt;</code> and how search engines show it</td>
+              <td>We wrote our own short description for each of the 7 pages.</td></tr>
+          <tr><td>ChatGPT</td><td>Form hints and browser validation</td>
+              <td>"How do I show example text inside an input, and stop the browser's own error popups so my JavaScript messages show instead?"</td>
+              <td>The <code>placeholder</code> attribute and the <code>novalidate</code> attribute on the form</td>
+              <td>We wrote local examples (e.g. Ahmed, Ali, 33123456) and kept our own JavaScript validation messages with an icon and words.</td></tr>
+          <tr><td>ChatGPT</td><td>Tab icon (favicon)</td>
+              <td>"How do I put a small logo in the browser tab for my website?"</td>
+              <td>The <code>&lt;link rel="icon"&gt;</code> tag in the head</td>
+              <td>We made our own favicon.png in the images folder and linked it in the head of all 7 pages.</td></tr>
+          <tr><td>ChatGPT</td><td>Hover hints on buttons</td>
+              <td>"How do I show a hint when someone hovers over a button?"</td>
+              <td>The <code>title</code> attribute</td>
+              <td>We added clear hints ("Make text smaller" / "Make text bigger") to the A− and A+ buttons, because the letters alone may confuse older users.</td></tr>
+          <tr><td>ChatGPT</td><td>Showing code and small text</td>
+              <td>"How do I show code examples and smaller caption text in HTML?"</td>
+              <td>The <code>&lt;code&gt;</code> and <code>&lt;small&gt;</code> tags</td>
+              <td>We used &lt;code&gt; for password examples and file names, and &lt;small&gt; for the message previews in the phone simulator.</td></tr>
+          <tr><td>ChatGPT</td><td>Fixing CSS that did not work</td>
+              <td>"Why is my CSS not working?"</td>
+              <td>An explanation that Bootstrap's own rules can win over ours, and that <code>!important</code> or a more specific selector fixes it</td>
+              <td>We only used !important where Bootstrap kept overriding us: the card top border, the quiz card border and the badge colours.</td></tr>
+          <tr><td>ChatGPT</td><td>Changing Bootstrap colours</td>
+              <td>"How do I change Bootstrap's button and alert colours to my own colours?"</td>
+              <td>Linking our style.css after Bootstrap and writing new rules for <code>.btn-primary</code> and <code>.alert</code></td>
+              <td>We recoloured buttons, alerts and badges to our palette and used a dark blue button on white boxes so the text stays readable.</td></tr>
+          <tr><td>ChatGPT</td><td>Soft see-through glow</td>
+              <td>"How do I make a soft, see-through glow around a box?"</td>
+              <td><code>box-shadow</code> with an <code>rgba()</code> colour</td>
+              <td>We used our blue at 25 to 35% for the glow on the hero photo and form box, and our navy at 8% for a soft shadow on the guide boxes.</td></tr>
+          <tr><td>ChatGPT</td><td>Rings around round photos</td>
+              <td>"How do I add more than one ring around a round picture?"</td>
+              <td>Several <code>box-shadow</code> values separated by commas</td>
+              <td>We gave the home page photo a blue border, two navy rings and a blue glow, and the smaller photos one thin blue ring.</td></tr>
+          <tr><td>ChatGPT</td><td>Fitting photos into a circle</td>
+              <td>"How do I make any photo fit a circle without stretching?"</td>
+              <td><code>aspect-ratio: 1 / 1</code> and <code>object-fit: cover</code></td>
+              <td>We used them with Bootstrap's rounded-circle so all our photos crop neatly, whatever their original shape.</td></tr>
+          <tr><td>ChatGPT</td><td>Top bar layout</td>
+              <td>"How do I put the logo on the left and buttons on the right, and let them wrap on phones?"</td>
+              <td>Flexbox with <code>justify-content</code>, <code>align-items</code> and <code>flex-wrap</code></td>
+              <td>We used it for our top bar with the logo and the A− / A+ buttons, and tested that it wraps on a phone.</td></tr>
+          <tr><td>ChatGPT</td><td>Colour swatch grid</td>
+              <td>"How do I make boxes that fit as many per row as the screen allows?"</td>
+              <td>CSS grid with <code>repeat(auto-fit, minmax(140px, 1fr))</code></td>
+              <td>We used it for the colour swatches in the style guide, so they show 6 per row on a laptop and 2 on a phone without scrolling sideways.</td></tr>
+          <tr><td>ChatGPT</td><td>Easy-to-tap buttons</td>
+              <td>"How big should buttons be so older people can tap them easily?"</td>
+              <td>Advice to make tap targets large, and the <code>min-height</code> property</td>
+              <td>We set the main buttons to at least 52px high and made the A− / A+ buttons 54 by 48px.</td></tr>
+          <tr><td>ChatGPT</td><td>Responsive columns</td>
+              <td>"How do I make columns side by side on a laptop and stacked on a phone?"</td>
+              <td>Bootstrap grid classes like <code>col-lg-6</code>, <code>col-md-6</code> and <code>col-12</code></td>
+              <td>We chose the column sizes for each section and tested every page at phone, tablet and laptop width.</td></tr>
+          <tr><td>ChatGPT</td><td>Table styling</td>
+              <td>"How do I make a nicer Bootstrap table with a dark header and rows that highlight on hover?"</td>
+              <td><code>table-dark</code>, <code>table-hover</code>, <code>table-striped</code> and <code>align-middle</code></td>
+              <td>We used the same table style on the Overview and Planning &amp; Design pages so all our tables look the same.</td></tr>
+          <tr><td>ChatGPT</td><td>Tables on phones</td>
+              <td>"My table makes the page scroll sideways on phones. How do I fix it?"</td>
+              <td>Wrapping the table in <code>&lt;div class="table-responsive"&gt;</code></td>
+              <td>We wrapped every table on the site, so only the table scrolls on a phone, not the whole page.</td></tr>
+          <tr><td>ChatGPT</td><td>Picture beside text</td>
+              <td>"How do I put a picture on the right of the text on laptops but above it on phones?"</td>
+              <td><code>float-md-end</code>, <code>d-block</code> and <code>mx-auto</code></td>
+              <td>We added <code>ms-md-4</code> and <code>mb-3</code> for space and used it for the round photos in the Smartphone Basics, Online Services and Stay Safe Online guides.</td></tr>
+          <tr><td>ChatGPT</td><td>Hero layout</td>
+              <td>"How do I put text and a picture side by side and centre them vertically?"</td>
+              <td><code>row align-items-center</code> with Bootstrap columns</td>
+              <td>We used it for the home page hero, the workshop section and the phone simulator, and added <code>mt-lg-0</code> so the spacing is right on every screen.</td></tr>
+          <tr><td>ChatGPT</td><td>Text weight and size helpers</td>
+              <td>"How do I make text bold or smaller with Bootstrap classes?"</td>
+              <td><code>fw-bold</code>, <code>fw-semibold</code> and <code>fs-6</code></td>
+              <td>We used fw-semibold for the success message, fw-bold for table labels and fs-6 for the badges.</td></tr>
+          <tr><td>ChatGPT</td><td>Bigger form and buttons</td>
+              <td>"How do I make form boxes and buttons bigger in Bootstrap?"</td>
+              <td><code>form-control-lg</code> and <code>btn-lg</code></td>
+              <td>We used them on the registration form and the main buttons so older users can read and tap them easily.</td></tr>
+          <tr><td>ChatGPT</td><td>Equal cards and pill shapes</td>
+              <td>"How do I make cards the same height, and buttons fully rounded?"</td>
+              <td><code>h-100</code> and <code>rounded-pill</code></td>
+              <td>We used h-100 for the three guide cards on the home page and rounded-pill for the hero buttons and badges.</td></tr>
+          <tr><td>ChatGPT</td><td>Text size buttons (JavaScript)</td>
+              <td>"How can a button make all the text on the page bigger or smaller?"</td>
+              <td><code>document.body.style.fontSize</code></td>
+              <td>We added a limit of 18 to 28px and saved the choice with localStorage (from our slides) so it stays the same on every page.</td></tr>
+          <tr><td>ChatGPT</td><td>Quiz feedback colour (JavaScript)</td>
+              <td>"How do I turn a message green or red when the answer is right or wrong?"</td>
+              <td><code>style.color</code> inside an if / else</td>
+              <td>We added ✓ and ✗ symbols and words to the message, so the answer is clear even for people who cannot see colours well.</td></tr>
+          <tr><td>ChatGPT</td><td>Clearing the form (JavaScript)</td>
+              <td>"How do I empty a form after it's submitted successfully?"</td>
+              <td>The <code>reset()</code> method on the form</td>
+              <td>We call it after our success message, so the form is ready for the next person.</td></tr>
+          <tr><td>ChatGPT</td><td>Colour contrast research</td>
+              <td>"How do I check if my text colour is readable for people with poor eyesight?"</td>
+              <td>An explanation of WCAG contrast ratios (at least 4.5:1 for normal text)</td>
+              <td>We checked our colours, changed the button text to navy and made the code examples a darker pink so they pass.</td></tr>
+          <tr><td>ChatGPT</td><td>Text size research</td>
+              <td>"What font size is best for elderly users on a website?"</td>
+              <td>Advice to use at least 16 to 18px, with larger text being better</td>
+              <td>We chose 20px for the body text and added the A− / A+ buttons so users can make it bigger.</td></tr>
+          <tr><td>ChatGPT</td><td>Privacy research</td>
+              <td>"Is there a law in Bahrain about collecting personal data in a form?"</td>
+              <td>Information about Bahrain's Personal Data Protection Law (PDPL)</td>
+              <td>We kept the form to name, mobile and email only, and wrote in our Ethics table that a real version would need a privacy policy and consent.</td></tr>
           <tr><td>GitHub Copilot</td><td>Phone practice simulator (JavaScript)</td>
               <td>"Show one div and hide the others when a button is clicked."</td>
               <td>Functions that use <code>style.display = "none"</code> and <code>"block"</code></td>

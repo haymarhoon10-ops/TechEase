@@ -510,13 +510,6 @@ a:hover {
   margin: 5px 0;
 }
 
-/* ---------- TO-DO highlight ----------
-   Yellow text = your group must fill this in. Delete this rule before submitting. */
-.todo {
-  background-color: #FFF59D;
-}
-
-
 /* =========================================================
    Bootstrap components recoloured to the TechEase palette
    (these rules come after bootstrap.min.css, so they win)
