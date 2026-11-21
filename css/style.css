@@ -157,6 +157,7 @@ a:hover {
 
 .page-banner h1 {
   color: #ffffff;
+  font-size: 44px;
 }
 
 .page-banner p {
@@ -165,7 +166,6 @@ a:hover {
   margin-bottom: 0;
 }
 
-/* ---------- Buttons ---------- */
 /* ---------- Sections ---------- */
 .section {
   padding: 60px 0;
@@ -256,7 +256,6 @@ a:hover {
   clear: both;
 }
 
-/* ---------- Tip and warning boxes ---------- */
 /* ---------- Form ---------- */
 .form-box {
   background-color: #ffffff;
@@ -463,7 +462,6 @@ a:hover {
   margin-top: 10px;
 }
 
-/* ---------- Tables ---------- */
 /* ---------- Planning / overview pages ---------- */
 .caption {
   font-size: 17px;
@@ -570,7 +568,7 @@ a:hover {
 }
 
 .card h3 {
-  font-size: 23px;
+  font-size: 24px;
 }
 
 .quiz-question.card {
@@ -620,12 +618,12 @@ a:hover {
 
 .form-control {
   font-family: "Poppins", Arial, sans-serif;
-  border: 2px solid #9FB3C1;
+  border: 2px solid #6B8293;
   border-radius: 12px;
 }
 
 .form-control:focus {
-  border-color: #02A9F7;
+  border-color: #02577A;
   box-shadow: 0 0 0 4px #DDF2FC;
 }
 
@@ -649,8 +647,6 @@ a:hover {
   box-shadow: 0 0 0 3px #02A9F7;
 }
 
-/* on phones the circle sits above the text; from tablet size it floats right (float-md-end) */
-
 /* big decorative circle behind the hero photo */
 .hero-circle-wrap {
   text-align: center;
@@ -661,7 +657,7 @@ a:hover {
   margin: 0 auto;
 }
 
-/* ---------- Moved from inline styles ---------- */
+/* ---------- Small helper classes ---------- */
 /* Colour swatches in the style guide */
 .swatch-primary   { background-color: #02A9F7; color: #0A1A24; }
 .swatch-secondary { background-color: #0A1A24; color: #ffffff; }
@@ -692,3 +688,6 @@ a:hover {
 
 /* Code examples: darker pink so they pass WCAG contrast (4.5:1) on light backgrounds */
 code { color: #A3195B; }
+
+/* Quiz tips stay hidden until the user answers (shown by checkAnswer) */
+.quiz-tip { display: none; }

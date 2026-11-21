@@ -85,7 +85,8 @@ function validateForm() {
 
   // everything is correct
   if (valid == true) {
-    document.getElementById("successMessage").innerHTML =
+    // textContent shows the name as plain text, so typed HTML tags are not run
+    document.getElementById("successMessage").textContent =
       "✓ Thank you, " + firstName + "! Your details are correct and your registration is complete.";
     document.getElementById("successMessage").style.display = "block";
     document.getElementById("registerForm").reset();
@@ -108,6 +109,8 @@ function checkAnswer(questionNumber, choice, correct) {
     answerBox.innerHTML = "✗ Not quite. Read the tip below and try again.";
     answerBox.style.color = "red";
   }
+  // show the tip only after the user has answered
+  document.getElementById("tip" + questionNumber).style.display = "block";
 }
 
 
@@ -136,6 +139,9 @@ function openChat() {
 
 function typeMessage() {
   document.getElementById("messageBox").innerHTML = "Hello Fatima! 😊";
+  // move the yellow outline from the message box to the send button
+  document.getElementById("messageBox").className = "message-box";
+  document.getElementById("sendButton").className = "send-button tap-here";
   document.getElementById("simStep").innerHTML = "Step 4: Tap the green send button ➤";
   document.getElementById("simHint").innerHTML = "";
 }
@@ -159,6 +165,8 @@ function restartSimulator() {
   hideAllScreens();
   document.getElementById("screen1").style.display = "block";
   document.getElementById("messageBox").innerHTML = "Type a message";
+  document.getElementById("messageBox").className = "message-box tap-here";
+  document.getElementById("sendButton").className = "send-button";
   document.getElementById("simStep").innerHTML = "Step 1: Tap the green WhatsApp icon.";
   document.getElementById("restartButton").style.display = "none";
 }
