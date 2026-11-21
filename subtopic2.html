@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How to use government e-services, online banking and appointments.">
+  <title>Online Services | TechEase</title>
+  <!-- Bootstrap 5 (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Our stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/favicon.png">
+</head>
+<body onload="loadTextSize()">
+
+  <!-- ===== Navigation bar ===== -->
+  <div class="topbar">
+    <div class="container">
+      <a href="home.html" class="logo">Tech<span>Ease</span></a>
+      <div class="text-size">
+        <span>Text size:</span>
+        <button type="button" onclick="changeTextSize(-2)" title="Make text smaller">A−</button>
+        <button type="button" onclick="changeTextSize(2)" title="Make text bigger">A+</button>
+      </div>
+      <ul class="nav nav-pills menu">
+        <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="subtopic1.html">Smartphone Basics</a></li>
+        <li class="nav-item"><a class="nav-link active" href="subtopic2.html">Online Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="subtopic3.html">Stay Safe Online</a></li>
+        <li class="nav-item"><a class="nav-link" href="planning-design.html">Planning &amp; Design</a></li>
+        <li class="nav-item"><a class="nav-link" href="reflection-ai-report.html">Reflection &amp; AI</a></li>
+        <li class="nav-item"><a class="nav-link" href="overview.html">Overview</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ===== Page banner ===== -->
+  <div class="page-banner">
+    <div class="container">
+      <h1>🏛️ Online Services Made Easy</h1>
+      <p>Do everyday tasks from home: government services, banking and appointments.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container">
+
+      <p>Many services you used to visit in person are now available online, <strong>24 hours a day</strong>.
+         Using them saves time, travel and waiting in queues.</p>
+
+      <div class="row mt-4">
+        <div class="col-lg-4 col-md-6 col-12 mb-4">
+          <div class="card h-100 border-0 shadow rounded-4 p-4">
+            <span class="icon-circle">🏛️</span>
+            <h3>Government services</h3>
+            <p>Renew documents, pay bills and check your requests on the official Bahrain government portal.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 mb-4">
+          <div class="card h-100 border-0 shadow rounded-4 p-4">
+            <span class="icon-circle">🏦</span>
+            <h3>Online banking</h3>
+            <p>Check your balance and pay bills using your bank's official app.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-12 mb-4">
+          <div class="card h-100 border-0 shadow rounded-4 p-4">
+            <span class="icon-circle">🩺</span>
+            <h3>Appointments</h3>
+            <p>Book or change appointments online instead of waiting on the phone.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="guide shadow-sm">
+        <img src="images/government.jpg" class="rounded-circle circle-small d-block mx-auto float-md-end ms-md-4 mb-3" alt="Using a laptop to access online services">
+        <h2>1. Using government e-services</h2>
+        <ol>
+          <li>Open your internet browser and type the <strong>official</strong> government website address
+              (in Bahrain: <strong>bahrain.bh</strong>), or use the official app.</li>
+          <li>Log in with your personal secure login. <strong>Never</strong> give your login details to anyone.</li>
+          <li>Choose the service you need, for example paying a bill.</li>
+          <li>Follow the steps on the screen and check the details before you press <strong>Submit</strong>.</li>
+          <li>Save or take a photo of the confirmation number.</li>
+        </ol>
+        <div class="alert alert-warning fw-semibold">⚠ Always type the website address yourself. Do not click links in SMS
+          messages that ask you to log in. They may be fake.</div>
+        <div class="clear"></div>
+      </div>
+
+      <div class="guide shadow-sm">
+        <img src="images/banking.jpg" class="rounded-circle circle-small d-block mx-auto float-md-end ms-md-4 mb-3" alt="An older couple using a banking app together">
+        <h2>2. Online banking safely</h2>
+        <ol>
+          <li>Download your bank's app <strong>only</strong> from the official App Store or Google Play.</li>
+          <li>Log in with your password, fingerprint or face ID.</li>
+          <li>Tap <strong>Accounts</strong> to see your balance.</li>
+          <li>Tap <strong>Pay bills</strong> or <strong>Transfer</strong> and follow the steps.</li>
+          <li>Always <strong>log out</strong> when you finish.</li>
+        </ol>
+        <div class="clear"></div>
+      </div>
+
+      <div class="guide shadow-sm">
+        <img src="images/appointment.jpg" class="rounded-circle circle-small d-block mx-auto float-md-end ms-md-4 mb-3" alt="Booking an appointment on a phone">
+        <h2>3. Booking an appointment</h2>
+        <ol>
+          <li>Open the official app or website of the hospital, clinic or service.</li>
+          <li>Choose <strong>Book appointment</strong>.</li>
+          <li>Pick the date and time that suit you.</li>
+          <li>Check the details and confirm. You will usually get an SMS or email confirmation.</li>
+        </ol>
+        <div class="clear"></div>
+      </div>
+
+      <h2 class="section-title mt-5">Do's and don'ts</h2>
+      <div class="line"></div>
+      <table class="table table-striped table-hover align-middle shadow-sm">
+        <thead class="table-dark">
+          <tr><th>✓ Do</th><th>✗ Don't</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Use only official websites and apps</td><td>Click links in unexpected messages</td></tr>
+          <tr><td>Check the details before you submit</td><td>Share your password or PIN with anyone</td></tr>
+          <tr><td>Log out when you finish</td><td>Use public Wi-Fi for banking</td></tr>
+          <tr><td>Ask a trusted family member if you are unsure</td><td>Rush. Take your time.</td></tr>
+        </tbody>
+      </table>
+
+      <p class="mt-4">Next: <a href="subtopic3.html">Learn how to stay safe online →</a></p>
+    </div>
+  </div>
+
+  <!-- ===== Footer ===== -->
+  <div class="footer">
+    <div class="container">
+      <p><strong>TechEase</strong> - Technology made easy for everyone.</p>
+      <p>Free workshops for seniors in Bahrain · <a href="mailto:hello@techease.bh">hello@techease.bh</a></p>
+      <p>© 2026 TechEase - Web Fundamentals (IT6012) Group Project, Bahrain Polytechnic. Image credits are listed on the <a href="overview.html#credits">Overview</a> page.</p>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

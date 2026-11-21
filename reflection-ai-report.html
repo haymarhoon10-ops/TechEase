@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Project reflection, AI usage report, lessons learned and teamwork.">
+  <title>Reflection & AI Report | TechEase</title>
+  <!-- Bootstrap 5 (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Our stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/favicon.png">
+</head>
+<body onload="loadTextSize()">
+
+  <!-- ===== Navigation bar ===== -->
+  <div class="topbar">
+    <div class="container">
+      <a href="home.html" class="logo">Tech<span>Ease</span></a>
+      <div class="text-size">
+        <span>Text size:</span>
+        <button type="button" onclick="changeTextSize(-2)" title="Make text smaller">A−</button>
+        <button type="button" onclick="changeTextSize(2)" title="Make text bigger">A+</button>
+      </div>
+      <ul class="nav nav-pills menu">
+        <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="subtopic1.html">Smartphone Basics</a></li>
+        <li class="nav-item"><a class="nav-link" href="subtopic2.html">Online Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="subtopic3.html">Stay Safe Online</a></li>
+        <li class="nav-item"><a class="nav-link" href="planning-design.html">Planning &amp; Design</a></li>
+        <li class="nav-item"><a class="nav-link active" href="reflection-ai-report.html">Reflection &amp; AI</a></li>
+        <li class="nav-item"><a class="nav-link" href="overview.html">Overview</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ===== Page banner ===== -->
+  <div class="page-banner">
+    <div class="container">
+      <h1>Reflection &amp; AI Usage Report</h1>
+      <p>What we learned, how we used AI, and how we worked as a team.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container">
+
+      <h2>Project reflection</h2>
+      <p>Our goal was to build a website that solves a real problem. We noticed that many older people in
+         Bahrain, including members of our own families, find smartphones and online services confusing, and are
+         often targeted by scam messages. This led us to create TechEase, an educational website with simple,
+         step-by-step guides. Choosing a real audience changed how we worked: every decision had to answer the
+         question "Will this be easy for a 70-year-old to use?" This made us think about accessibility from the
+         very beginning instead of adding it at the end.</p>
+      <p>We are proud that the website meets all of the requirements. It has seven connected pages, a consistent
+         design using one shared stylesheet, a responsive Bootstrap layout and a registration form with JavaScript
+         validation. We also added features we believe are genuinely useful, such as the text-size buttons that
+         remember the user's choice, the phone practice simulator where users rehearse sending a WhatsApp message
+         with no risk, and the "Spot the Scam" quiz that lets them test themselves safely.</p>
+
+      <h2>AI utilisation report</h2>
+      <p>We used AI tools throughout the project, as required. Claude helped us plan the requirements, site map
+         and user journey, suggested a style guide, checked our colour contrast and helped us write and explain
+         parts of the HTML, CSS and JavaScript. <span class="todo">[Name your second tool, e.g. Canva AI, and what
+         you used it for, such as mockups or images.]</span> <span class="todo">[Name your third tool, e.g. Google Gemini
+         or Microsoft Copilot, and what you used it for, such as proofreading or testing.]</span></p>
+      <p>We did not accept AI output without checking it. For example, the AI contrast check showed that our
+         first button colour failed accessibility standards, so we changed it. We also rewrote content in our own
+         words, removed information we could not confirm, and tested every feature ourselves. Every use of AI is
+         recorded in the AI documentation table on the Overview page, because being honest about AI use is part
+         of working ethically.</p>
+
+      <h2>Lessons learned</h2>
+      <p>We learned that planning saves time. Creating the wireframes and style guide first meant the coding
+         stage was much faster and the pages looked consistent. We also learned practical skills: how to validate
+         a form with JavaScript, how to use the Bootstrap grid to make pages responsive, and how to use one external
+         CSS file so that a single change updates every page. Finally, we learned that AI is a helpful assistant
+         but not a replacement for our own judgement. It can make mistakes, so we must always review, test and
+         understand the code and content it produces.</p>
+
+      <h2>Team collaboration experience</h2>
+      <p>We divided the work by pages and tasks, and communicated through a group chat to share progress and
+         files. <span class="todo">[Describe honestly how your team worked: who did what, how often you met, and
+         one challenge you faced, such as uneven workloads or deadlines, and how you handled it.]</span> Working as a
+         team taught us the importance of clear deadlines and of checking each other's work. If we did this project
+         again, we would agree on file names and a shared folder structure on the first day, and test on real
+         phones earlier.</p>
+
+      <p class="caption mt-4 todo">Word count: [update after filling in, must be 500 to 600 words]</p>
+    </div>
+  </div>
+
+  <!-- ===== Footer ===== -->
+  <div class="footer">
+    <div class="container">
+      <p><strong>TechEase</strong> - Technology made easy for everyone.</p>
+      <p>Free workshops for seniors in Bahrain · <a href="mailto:hello@techease.bh">hello@techease.bh</a></p>
+      <p>© 2026 TechEase - Web Fundamentals (IT6012) Group Project, Bahrain Polytechnic. Image credits are listed on the <a href="overview.html#credits">Overview</a> page.</p>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
