@@ -248,7 +248,7 @@
         <thead class="table-dark"><tr><th>AI tool</th><th>Purpose of usage</th><th>Expected outcome</th></tr></thead>
         <tbody>
           <tr><td>Claude</td><td>Planning, requirements, style guide, content drafting, code help and explanations</td><td>A clear plan and working, well-structured code that we understand</td></tr>
-          <tr><td>ChatGPT</td><td>Learning Bootstrap components and CSS styling that go beyond the course slides, and drafting scam-awareness content</td><td>Example code we can understand and adapt, and a first draft of simple safety tips</td></tr>
+          <tr><td>ChatGPT</td><td>Creating images, learning Bootstrap components and CSS styling that go beyond the course slides, and drafting scam-awareness content</td><td>Realistic photos that suit our audience, example code we can understand and adapt, and a first draft of simple safety tips</td></tr>
           <tr><td>GitHub Copilot (in VS Code)</td><td>Code suggestions while writing JavaScript: the phone simulator and the email check</td><td>Faster coding, with every suggestion tested and changed by us</td></tr>
         </tbody>
       </table>
@@ -285,6 +285,10 @@
               <td>"Write simple tips for older people about spotting scam messages."</td>
               <td>A list of common scam types and warning signs</td>
               <td>We shortened it, rewrote it in plain words and changed the examples to fit Bahrain.</td></tr>
+          <tr><td>ChatGPT</td><td>Image generation for the website photos</td>
+              <td>"Create a realistic photo of a smiling older Bahraini man using his smartphone at home." We wrote a similar prompt for each topic: phone calls, WhatsApp, video calls, photos, government services, online banking, appointments and scams.</td>
+              <td>Nine realistic photos (hero.jpg, phone-call.jpg, whatsapp.jpg, video-call.jpg, photo.jpg, government.jpg, banking.jpg, appointment.jpg, scam.jpg)</td>
+              <td>We chose the images that best matched each topic, cropped them into circles with CSS, wrote our own alt text, and labelled them as AI-generated in the credits.</td></tr>
           <tr><td>GitHub Copilot</td><td>Phone practice simulator (JavaScript)</td>
               <td>"Show one div and hide the others when a button is clicked."</td>
               <td>Functions that use <code>style.display = "none"</code> and <code>"block"</code></td>
@@ -300,7 +304,7 @@
       <table class="table table-striped table-hover align-middle shadow-sm">
         <thead class="table-dark"><tr><th>Area</th><th>What we did</th></tr></thead>
         <tbody>
-          <tr><td>Copyright &amp; images</td><td>We used only free-licence images (e.g. Unsplash, Pexels) or our own, and credited every image below. We did not use any company or government logos.</td></tr>
+          <tr><td>Copyright &amp; images</td><td>All of our photos were created with ChatGPT image generation, so they do not show real people or copy other people's photos. We credited every image below and say clearly which ones are AI-generated. We did not use any company or government logos.</td></tr>
           <tr><td>Accessibility</td><td>We followed WCAG guidance: high contrast, large text, alt text on all images, and messages that do not rely on colour alone.</td></tr>
           <tr><td>Privacy</td><td>The registration form only collects what is needed (name, mobile, email). In this student project the data is not stored or sent anywhere. A real version would need a privacy policy and the user's consent under Bahrain's Personal Data Protection Law (PDPL).</td></tr>
           <tr><td>Accurate information</td><td>We give general advice and point users to <strong>official</strong> websites and apps instead of copying information that may change.</td></tr>
@@ -311,8 +315,9 @@
 
       <h2 class="mt-5" id="credits">Sources &amp; image credits</h2>
       <ul>
-        <li class="todo">[hero.jpg: photo by NAME on Unsplash, link]</li>
-        <li class="todo">[phone-call.jpg, whatsapp.jpg, video-call.jpg, photo.jpg, government.jpg, banking.jpg, appointment.jpg, scam.jpg: list each photographer and link]</li>
+        <li>AI-generated images: all nine photos (hero.jpg, phone-call.jpg, whatsapp.jpg, video-call.jpg, photo.jpg, government.jpg,
+            banking.jpg, appointment.jpg and scam.jpg) were created by our group with ChatGPT image generation (OpenAI), October 2026.
+            They do not show real people.</li>
         <li>Font: Poppins, Google Fonts (SIL Open Font License).</li>
         <li>Framework: Bootstrap 5.3 (MIT License), getbootstrap.com.</li>
         <li>Contrast guidance: W3C Web Content Accessibility Guidelines (WCAG) 2.1.</li>
