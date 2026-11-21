@@ -34,10 +34,11 @@ function changeTextSize(amount) {
 // ---------- 2. Registration form validation ----------
 
 function validateForm() {
-  let firstName = document.getElementById("firstName").value;
-  let lastName = document.getElementById("lastName").value;
-  let mobile = document.getElementById("mobile").value;
-  let email = document.getElementById("email").value;
+  // trim() removes spaces at the start and end, so "   " does not count as a name
+  let firstName = document.getElementById("firstName").value.trim();
+  let lastName = document.getElementById("lastName").value.trim();
+  let mobile = document.getElementById("mobile").value.trim();
+  let email = document.getElementById("email").value.trim();
 
   let valid = true;
 
@@ -72,10 +73,12 @@ function validateForm() {
     valid = false;
   }
 
-  // Email: must have an @ and a dot after the @
+  // Email: one @ only, a dot after the @, and no spaces
   let at = email.indexOf("@");
   let dot = email.lastIndexOf(".");
-  if (at < 1 || dot < at + 2 || dot == email.length - 1) {
+  let oneAt = (at == email.lastIndexOf("@"));
+  let noSpaces = (email.indexOf(" ") == -1);
+  if (at < 1 || dot < at + 2 || dot == email.length - 1 || oneAt == false || noSpaces == false) {
     document.getElementById("emailError").innerHTML = "⚠ Please enter a valid email, for example name@example.com";
     valid = false;
   }
@@ -83,7 +86,7 @@ function validateForm() {
   // everything is correct
   if (valid == true) {
     document.getElementById("successMessage").innerHTML =
-      "✓ Thank you, " + firstName + "! You are registered for a free TechEase workshop.";
+      "✓ Thank you, " + firstName + "! Your details are correct and your registration is complete.";
     document.getElementById("successMessage").style.display = "block";
     document.getElementById("registerForm").reset();
   }

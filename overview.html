@@ -155,7 +155,17 @@
         </div>
         <div class="col-lg-2 col-md-4 col-12 mb-3">
           <img src="images/mockup-mobile.png" class="img-fluid rounded-3 border shadow-sm mb-2" alt="High-fidelity mobile mockup of the home page">
-          <p class="caption">Mobile (390px): one column, full-width buttons</p>
+          <p class="caption">Mobile (390px): one column, buttons stacked</p>
+        </div>
+      </div>
+      <div class="row align-items-start">
+        <div class="col-lg-6 col-12 mb-3">
+          <img src="images/mockup-subtopic1.png" class="img-fluid rounded-3 border shadow-sm mb-2" alt="High-fidelity desktop mockup of the Smartphone Basics page">
+          <p class="caption">Smartphone Basics (desktop): page banner and the phone practice simulator</p>
+        </div>
+        <div class="col-lg-6 col-12 mb-3">
+          <img src="images/mockup-planning-design.png" class="img-fluid rounded-3 border shadow-sm mb-2" alt="High-fidelity desktop mockup of the Planning and Design page">
+          <p class="caption">Planning &amp; Design (desktop): documentation layout with tables</p>
         </div>
       </div>
 
@@ -179,7 +189,7 @@
           <tr><td>Headings</td><td class="fw-bold">Poppins Bold (700)</td>
               <td>H1 48px · H2 34px · H3 24px</td><td>Modern, round letter shapes that look friendly and professional</td></tr>
           <tr><td>Body text</td><td>Poppins Regular (400) / SemiBold (600)</td>
-              <td>20px (never below 17px), line height 1.7</td>
+              <td>20px (never below 17px, except the small labels inside the pretend phone screen), line height 1.7</td>
               <td>Wide, open letters and extra line spacing make long text easier to read for older eyes</td></tr>
         </tbody>
       </table>
@@ -279,7 +289,7 @@
           <tr><td>Claude</td><td>UI style guide &amp; accessibility check</td>
               <td>"Here is our chosen blue colour palette and a reference design. Create a UI style guide for an elderly-friendly website and check the colours for accessibility."</td>
               <td>Colour roles, WCAG contrast check, font choices, component styles, responsive plan</td>
-              <td>We chose the palette and style ourselves. After the contrast check showed white text on bright blue fails (2.6:1), we changed the button text to navy (6.8:1). We also set the body text to 20px (never below 17px) so it is easier for older eyes to read.</td></tr>
+              <td>We chose the palette and style ourselves. After the contrast check showed white text on bright blue fails (2.6:1), we changed the button text to navy (6.8:1). We also set the body text to 20px (never below 17px outside the pretend phone screen) so it is easier for older eyes to read.</td></tr>
           <tr><td>Claude</td><td>Coding assistance (HTML, CSS, JavaScript)</td>
               <td>"Build the 7 pages for TechEase using only HTML, CSS, Bootstrap 5 and basic JavaScript, with form validation (names at least 3 characters, mobile exactly 8 digits, valid email), a text-size button and a scam quiz." Then: "Redesign it in a dark &amp; modern style with the Poppins font, and add a phone practice simulator."</td>
               <td>HTML pages, style.css, script.js</td>
@@ -315,7 +325,7 @@
           <tr><td>ChatGPT</td><td>Highlighting the next button in the simulator</td>
               <td>"How do I highlight a button with a border that doesn't change its size?"</td>
               <td>An explanation of the CSS <code>outline</code> property</td>
-              <td>We made a <code>tap-here</code> class with a 4px amber outline (#F5B700) and moved it from button to button so users always know what to tap next.</td></tr>
+              <td>We made a <code>tap-here</code> class with a 4px amber outline (#F5B700) and put it on the correct button on each screen so users always know what to tap next.</td></tr>
           <tr><td>ChatGPT</td><td>Drawing a phone shape in CSS</td>
               <td>"How do I draw a phone shape in CSS so content stays inside it?"</td>
               <td>CSS with a fixed width and height, <code>border-radius</code> and <code>overflow: hidden</code></td>
@@ -432,6 +442,10 @@
               <td>"Is there a law in Bahrain about collecting personal data in a form?"</td>
               <td>Information about Bahrain's Personal Data Protection Law (PDPL)</td>
               <td>We kept the form to name, mobile and email only, and wrote in our Ethics table that a real version would need a privacy policy and consent.</td></tr>
+          <tr><td>ChatGPT</td><td>Final review of our website against the rubric</td>
+              <td>"Act as a strict lecturer and mark our website against this rubric and the project brief. Quote the evidence for each mark and list every problem with a fix." (shortened)</td>
+              <td>A marked review with a score for each rubric item and a list of problems</td>
+              <td>We checked each point ourselves. We fixed the ones we agreed with: trimmed the names, blocked spaces and a second @ in the email, said clearly that the form is a student demo, made the font-size claim accurate and added two more page mockups.</td></tr>
           <tr><td>GitHub Copilot</td><td>Phone practice simulator (JavaScript)</td>
               <td>"Show one div and hide the others when a button is clicked."</td>
               <td>Functions that use <code>style.display = "none"</code> and <code>"block"</code></td>
@@ -439,7 +453,7 @@
           <tr><td>GitHub Copilot</td><td>Email check in the registration form</td>
               <td>"Check that an email has an @ and a dot after it without using regex."</td>
               <td>A check using <code>indexOf</code> and <code>lastIndexOf</code></td>
-              <td>We wrote our own error message and tested it with many wrong email addresses.</td></tr>
+              <td>We wrote our own error message and tested it with many wrong email addresses. After our final review we also blocked spaces and a second @.</td></tr>
         </tbody>
       </table>
       </div>
