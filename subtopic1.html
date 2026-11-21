@@ -12,6 +12,8 @@
   <!-- Our stylesheet -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="images/favicon.png">
+  <!-- Our JavaScript (functions run on page load and on clicks) -->
+  <script src="js/script.js"></script>
 </head>
 <body onload="loadTextSize()">
 
@@ -56,7 +58,7 @@
           <div class="phone">
 
             <!-- Screen 1: home screen -->
-            <div class="screen home-screen" id="screen1" style="display:block;">
+            <div class="screen home-screen" id="screen1">
               <p>Tuesday · 10:30</p>
               <div class="app-grid">
                 <button type="button" class="app" onclick="wrongTap('That is the Phone app. Look for the green WhatsApp icon.')"><span>📞</span>Phone</button>
@@ -97,7 +99,7 @@
               </div>
               <div class="message-bar">
                 <span class="message-box">Type a message</span>
-                <span class="send-button" style="display:inline-block; text-align:center; line-height:46px;">➤</span>
+                <span class="send-button send-icon">➤</span>
               </div>
             </div>
 
@@ -108,9 +110,9 @@
             <h3>Your instructions</h3>
             <p class="sim-step" id="simStep">Step 1: Tap the green WhatsApp icon.</p>
             <p class="sim-hint" id="simHint"></p>
-            <p>The button you need to tap has a <strong style="color:#F5B700;">yellow outline</strong>.
+            <p>The button you need to tap has a <strong class="text-accent">yellow outline</strong>.
                If you tap the wrong thing, a hint will appear here.</p>
-            <button type="button" class="btn btn-primary btn-lg rounded-pill px-4" id="restartButton" style="display:none;" onclick="restartSimulator()">Practise again ↺</button>
+            <button type="button" class="btn btn-primary btn-lg rounded-pill px-4" id="restartButton" onclick="restartSimulator()">Practise again ↺</button>
           </div>
         </div>
       </div>
@@ -206,6 +208,5 @@
     </div>
   </div>
 
-  <script src="js/script.js"></script>
 </body>
 </html>

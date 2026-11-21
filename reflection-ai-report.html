@@ -12,6 +12,8 @@
   <!-- Our stylesheet -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="images/favicon.png">
+  <!-- Our JavaScript (functions run on page load and on clicks) -->
+  <script src="js/script.js"></script>
 </head>
 <body onload="loadTextSize()">
 
@@ -63,14 +65,15 @@
       <h2>AI utilisation report</h2>
       <p>We used AI tools throughout the project, as required. Claude helped us plan the requirements, site map
          and user journey, suggested a style guide, checked our colour contrast and helped us write and explain
-         parts of the HTML, CSS and JavaScript. <span class="todo">[Name your second tool, e.g. Canva AI, and what
-         you used it for, such as mockups or images.]</span> <span class="todo">[Name your third tool, e.g. Google Gemini
-         or Microsoft Copilot, and what you used it for, such as proofreading or testing.]</span></p>
+         parts of the HTML, CSS and JavaScript. ChatGPT helped us learn Bootstrap components and CSS
+         styling that went beyond our course slides, and gave us a first draft of the scam tips. GitHub Copilot
+         suggested code in VS Code for the phone simulator and the email check.</p>
       <p>We did not accept AI output without checking it. For example, the AI contrast check showed that our
          first button colour failed accessibility standards, so we changed it. We also rewrote content in our own
          words, removed information we could not confirm, and tested every feature ourselves. Every use of AI is
          recorded in the AI documentation table on the Overview page, because being honest about AI use is part
-         of working ethically.</p>
+         of working ethically. One mistake we made was not saving our ChatGPT and Copilot prompts, so those
+         entries are rebuilt from memory. Next time we will keep an AI log from the first day.</p>
 
       <h2>Lessons learned</h2>
       <p>We learned that planning saves time. Creating the wireframes and style guide first meant the coding
@@ -88,7 +91,7 @@
          again, we would agree on file names and a shared folder structure on the first day, and test on real
          phones earlier.</p>
 
-      <p class="caption mt-4 todo">Word count: [update after filling in, must be 500 to 600 words]</p>
+      <p class="caption mt-4 todo">Word count: [518 words now, not counting headings. Add 30 to 80 words in the team paragraph, then write the final number here.]</p>
     </div>
   </div>
 
@@ -101,6 +104,5 @@
     </div>
   </div>
 
-  <script src="js/script.js"></script>
 </body>
 </html>

@@ -406,7 +406,7 @@ a:hover {
   font-size: 15px;
   text-align: left;
   padding: 8px 14px;
-  color: #888;
+  color: #5F6B73;
 }
 
 .send-button {
@@ -666,3 +666,35 @@ a:hover {
   max-width: 500px;
   margin: 0 auto;
 }
+
+/* ---------- Moved from inline styles ---------- */
+/* Colour swatches in the style guide */
+.swatch-primary   { background-color: #02A9F7; color: #0A1A24; }
+.swatch-secondary { background-color: #0A1A24; color: #ffffff; }
+.swatch-accent    { background-color: #F5B700; color: #0A1A24; }
+.swatch-surface   { background-color: #10283A; color: #ffffff; }
+.swatch-link      { background-color: #02577A; color: #ffffff; }
+.swatch-light     { background-color: #F2F8FB; color: #0A1A24; }
+
+/* First column of the project overview table */
+.label-col { width: 25%; }
+
+/* Hidden until JavaScript shows them */
+#successMessage,
+#restartButton { display: none; }
+
+/* The pretend phone starts on the home screen */
+#screen1 { display: block; }
+
+/* Send icon on the "message sent" screen */
+.send-icon {
+  display: inline-block;
+  text-align: center;
+  line-height: 46px;
+}
+
+/* Yellow accent text on dark panels */
+.text-accent { color: #F5B700; }
+
+/* Code examples: darker pink so they pass WCAG contrast (4.5:1) on light backgrounds */
+code { color: #A3195B; }

@@ -12,6 +12,8 @@
   <!-- Our stylesheet -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="images/favicon.png">
+  <!-- Our JavaScript (functions run on page load and on clicks) -->
+  <script src="js/script.js"></script>
 </head>
 <body onload="loadTextSize()">
 
@@ -50,7 +52,7 @@
       <h2>1. Project overview</h2>
       <table class="table table-striped table-hover align-middle shadow-sm">
         <tbody>
-          <tr><th style="width:25%">Website title</th><td>TechEase: Technology Made Easy</td></tr>
+          <tr><th class="label-col">Website title</th><td>TechEase: Technology Made Easy</td></tr>
           <tr><th>Website category</th><td>Educational website</td></tr>
           <tr><th>Problem statement</th><td>Many elderly people in Bahrain struggle to use smartphones and online services.
               As government services, banking and healthcare appointments move online, seniors without digital skills
@@ -155,19 +157,19 @@
       <h3>Colour palette</h3>
       <p><strong>Primary</strong> #02A9F7 · <strong>Secondary</strong> #0A1A24 · <strong>Accent</strong> #F5B700</p>
       <div class="colour-grid">
-        <div class="swatch" style="background-color:#02A9F7; color:#0A1A24;">Primary<br>#02A9F7<br>Buttons, highlights</div>
-        <div class="swatch" style="background-color:#0A1A24; color:#ffffff;">Secondary<br>#0A1A24<br>Nav, hero, footer</div>
-        <div class="swatch" style="background-color:#F5B700; color:#0A1A24;">Accent<br>#F5B700<br>Warnings, tap hints</div>
-        <div class="swatch" style="background-color:#10283A; color:#ffffff;">Surface<br>#10283A<br>Dark cards</div>
-        <div class="swatch" style="background-color:#02577A; color:#ffffff;">Link blue<br>#02577A<br>Links on light areas</div>
-        <div class="swatch" style="background-color:#F2F8FB; color:#0A1A24;">Light<br>#F2F8FB<br>Reading sections</div>
+        <div class="swatch swatch-primary">Primary<br>#02A9F7<br>Buttons, highlights</div>
+        <div class="swatch swatch-secondary">Secondary<br>#0A1A24<br>Nav, hero, footer</div>
+        <div class="swatch swatch-accent">Accent<br>#F5B700<br>Warnings, tap hints</div>
+        <div class="swatch swatch-surface">Surface<br>#10283A<br>Dark cards</div>
+        <div class="swatch swatch-link">Link blue<br>#02577A<br>Links on light areas</div>
+        <div class="swatch swatch-light">Light<br>#F2F8FB<br>Reading sections</div>
       </div>
 
       <h3 class="mt-4">Typography</h3>
       <table class="table table-striped table-hover align-middle shadow-sm">
         <thead class="table-dark"><tr><th>Use</th><th>Font</th><th>Sizes</th><th>Why</th></tr></thead>
         <tbody>
-          <tr><td>Headings</td><td style="font-weight:700;">Poppins Bold (700)</td>
+          <tr><td>Headings</td><td class="fw-bold">Poppins Bold (700)</td>
               <td>H1 48px · H2 34px · H3 24px</td><td>Modern, round letter shapes that look friendly and professional</td></tr>
           <tr><td>Body text</td><td>Poppins Regular (400) / SemiBold (600)</td>
               <td>20px (never below 17px), line height 1.7</td>
@@ -217,38 +219,82 @@
       <p>This is done with Bootstrap classes such as <code>col-lg-4 col-md-6 col-12</code> and <code>img-fluid</code>
          for responsive images. See the mockups above for each screen size.</p>
 
+      <h2 class="mt-5">Maintainability and repeat use</h2>
+      <h3>How the site is built to be easy to update</h3>
+      <table class="table table-striped table-hover align-middle shadow-sm">
+        <thead class="table-dark"><tr><th>What we did</th><th>Why it helps future developers</th></tr></thead>
+        <tbody>
+          <tr><td>One external stylesheet (<code>css/style.css</code>) linked in the head of every page, with no inline styles</td><td>Changing a colour or font in one place updates all seven pages.</td></tr>
+          <tr><td>One external JavaScript file (<code>js/script.js</code>) linked in the head of every page</td><td>All functions are in one file, split into numbered, commented sections, so they are easy to find and fix.</td></tr>
+          <tr><td>Clear folder structure: <code>css/</code>, <code>js/</code>, <code>images/</code></td><td>Anyone can see where each type of file belongs.</td></tr>
+          <tr><td>Meaningful file names, ids and class names (e.g. <code>subtopic1.html</code>, <code>firstNameError</code>, <code>section-dark</code>)</td><td>The code explains itself, so a new developer understands it faster.</td></tr>
+          <tr><td>Comments marking each section in the HTML, CSS and JavaScript</td><td>Sections can be found, moved or removed without breaking the rest of the page.</td></tr>
+          <tr><td>The same page template (nav bar, banner, sections, footer) on every page</td><td>A new guide page can be added by copying an existing page and changing its content.</td></tr>
+          <tr><td>Bootstrap 5 loaded from a CDN</td><td>The framework can be upgraded by changing one version number.</td></tr>
+        </tbody>
+      </table>
+
+      <h3 class="mt-4">How the site encourages users to come back</h3>
+      <ul>
+        <li><strong>Text size is remembered:</strong> the A− / A+ choice is saved with localStorage, so returning users see the site the way they like it.</li>
+        <li><strong>Practice they can repeat:</strong> the phone simulator has a "Practise again" button, and the Spot the Scam quiz can be retried as many times as needed.</li>
+        <li><strong>Free weekly workshops:</strong> the registration form links online learning to real, repeated meetings with a trainer.</li>
+        <li><strong>Reference guides:</strong> the step-by-step guides and the "What to do if you are scammed" section are useful to look up again when a real situation happens.</li>
+        <li><strong>Family can share it:</strong> simple pages that relatives and caregivers can send to the older people they help.</li>
+      </ul>
+
       <h2 class="mt-5">10. AI utilisation plan</h2>
       <table class="table table-striped table-hover align-middle shadow-sm">
         <thead class="table-dark"><tr><th>AI tool</th><th>Purpose of usage</th><th>Expected outcome</th></tr></thead>
         <tbody>
           <tr><td>Claude</td><td>Planning, requirements, style guide, content drafting, code help and explanations</td><td>A clear plan and working, well-structured code that we understand</td></tr>
-          <tr><td class="todo">[Tool 2, e.g. Canva AI]</td><td class="todo">[e.g. Mockups and images]</td><td class="todo">[e.g. Professional visual designs]</td></tr>
-          <tr><td class="todo">[Tool 3, e.g. Google Gemini]</td><td class="todo">[e.g. Proofreading and testing ideas]</td><td class="todo">[e.g. Clear, error-free text]</td></tr>
+          <tr><td>ChatGPT</td><td>Learning Bootstrap components and CSS styling that go beyond the course slides, and drafting scam-awareness content</td><td>Example code we can understand and adapt, and a first draft of simple safety tips</td></tr>
+          <tr><td>GitHub Copilot (in VS Code)</td><td>Code suggestions while writing JavaScript: the phone simulator and the email check</td><td>Faster coding, with every suggestion tested and changed by us</td></tr>
         </tbody>
       </table>
 
       <h2 class="mt-5">AI documentation table</h2>
+      <p class="caption">Note: we did not save our ChatGPT and Copilot prompts at the time. The prompts for those tools
+         below are <strong>approximate, rebuilt from memory and from the code they helped with</strong>, not exact records.</p>
       <table class="table table-striped table-hover align-middle shadow-sm">
         <thead class="table-dark"><tr><th>AI Tool</th><th>Purpose</th><th>Prompt Used</th><th>Output Generated</th><th>Modifications Made</th></tr></thead>
         <tbody>
           <tr><td>Claude</td><td>Project planning &amp; requirement analysis</td>
               <td>"Help me plan a 7-page educational website called TechEase that teaches elderly people in Bahrain to use technology. Write the problem statement, target audience, objectives, functional and non-functional requirements, site map and user journey map."</td>
               <td>Problem statement, objectives, requirement tables, site map and user journey map</td>
-              <td class="todo">[What you changed, e.g. reworded the problem statement and added the text-size feature]</td></tr>
+              <td>We reworded the problem statement in our own words and focused it on seniors in Bahrain. We added the text-size buttons and the free workshop registration as requirements, because they fit our audience.</td></tr>
           <tr><td>Claude</td><td>UI style guide &amp; accessibility check</td>
               <td>"Here is our chosen blue colour palette and a reference design. Create a UI style guide for an elderly-friendly website and check the colours for accessibility."</td>
               <td>Colour roles, WCAG contrast check, font choices, component styles, responsive plan</td>
-              <td>We chose the palette and style ourselves. After the contrast check we changed the button colour from bright blue to dark blue. <span class="todo">[add your own changes]</span></td></tr>
+              <td>We chose the palette and style ourselves. After the contrast check showed white text on bright blue fails (2.6:1), we changed the button text to navy (6.8:1). We also set the body text to 20px (never below 17px) so it is easier for older eyes to read.</td></tr>
           <tr><td>Claude</td><td>Coding assistance (HTML, CSS, JavaScript)</td>
               <td>"Build the 7 pages for TechEase using only HTML, CSS, Bootstrap 5 and basic JavaScript, with form validation (names at least 3 characters, mobile exactly 8 digits, valid email), a text-size button and a scam quiz." Then: "Redesign it in a dark &amp; modern style with the Poppins font, and add a phone practice simulator."</td>
               <td>HTML pages, style.css, script.js</td>
-              <td class="todo">[What you reviewed, tested and changed in the code]</td></tr>
+              <td>We compared the code with our course slides and rewrote parts we could not explain, so it uses techniques we understand (for example getElementById, innerHTML and simple if statements). We tested the form with wrong names, numbers and emails, tested the simulator and quiz, and moved all styles into one external CSS file.</td></tr>
           <tr><td>Claude</td><td>Content writing &amp; diagrams</td>
               <td>"Write simple step-by-step guide content for seniors, and create a site map, user journey map and low-fidelity wireframes."</td>
               <td>Guide text, tips, quiz questions, site map, journey map, wireframes</td>
-              <td class="todo">[What you rewrote or checked, e.g. removed facts we could not confirm]</td></tr>
-          <tr><td class="todo">[Tool 2]</td><td class="todo">[Purpose]</td><td class="todo">[Exact prompt]</td><td class="todo">[Output]</td><td class="todo">[Changes]</td></tr>
-          <tr><td class="todo">[Tool 3]</td><td class="todo">[Purpose]</td><td class="todo">[Exact prompt]</td><td class="todo">[Output]</td><td class="todo">[Changes]</td></tr>
+              <td>We shortened the guides into one action per step, rewrote them in simple words, removed facts we could not confirm and changed examples to fit Bahrain. We also checked that the site map, journey map and wireframes match our real seven pages.</td></tr>
+          <tr><td>ChatGPT</td><td>Bootstrap 5 components (not covered in the slides)</td>
+              <td>"How do I make nice cards, pill-shaped nav links and badges in Bootstrap 5?"</td>
+              <td>Example code using <code>card</code>, <code>nav-pills</code>, <code>badge</code>, <code>shadow</code> and <code>rounded-4</code></td>
+              <td>We used our own colours and content, and kept only the classes we needed.</td></tr>
+          <tr><td>ChatGPT</td><td>Google Font and rounded / shadowed boxes in CSS</td>
+              <td>"How do I add a Google Font and make boxes with rounded corners and shadows in CSS?"</td>
+              <td>The Poppins font link, and CSS using <code>border-radius</code> and <code>box-shadow</code></td>
+              <td>We chose our own sizes and put all the styles in our external style.css file.</td></tr>
+          <tr><td>ChatGPT</td><td>Scam-awareness content</td>
+              <td>"Write simple tips for older people about spotting scam messages."</td>
+              <td>A list of common scam types and warning signs</td>
+              <td>We shortened it, rewrote it in plain words and changed the examples to fit Bahrain.</td></tr>
+          <tr><td>GitHub Copilot</td><td>Phone practice simulator (JavaScript)</td>
+              <td>"Show one div and hide the others when a button is clicked."</td>
+              <td>Functions that use <code>style.display = "none"</code> and <code>"block"</code></td>
+              <td>We split it into 4 screens, added friendly hints for wrong taps and a "Practise again" button.</td></tr>
+          <tr><td>GitHub Copilot</td><td>Email check in the registration form</td>
+              <td>"Check that an email has an @ and a dot after it without using regex."</td>
+              <td>A check using <code>indexOf</code> and <code>lastIndexOf</code></td>
+              <td>We wrote our own error message and tested it with many wrong email addresses.</td></tr>
         </tbody>
       </table>
 
@@ -287,6 +333,5 @@
     </div>
   </div>
 
-  <script src="js/script.js"></script>
 </body>
 </html>

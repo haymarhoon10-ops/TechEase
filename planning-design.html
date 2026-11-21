@@ -12,6 +12,8 @@
   <!-- Our stylesheet -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="images/favicon.png">
+  <!-- Our JavaScript (functions run on page load and on clicks) -->
+  <script src="js/script.js"></script>
 </head>
 <body onload="loadTextSize()">
 
@@ -145,19 +147,19 @@
 
       <h2 class="mt-5">5. Colour palette</h2>
       <div class="colour-grid">
-        <div class="swatch" style="background-color:#02A9F7; color:#0A1A24;">Primary<br>#02A9F7<br>Buttons, highlights</div>
-        <div class="swatch" style="background-color:#0A1A24; color:#ffffff;">Secondary<br>#0A1A24<br>Nav, hero, footer</div>
-        <div class="swatch" style="background-color:#F5B700; color:#0A1A24;">Accent<br>#F5B700<br>Warnings, tap hints</div>
-        <div class="swatch" style="background-color:#10283A; color:#ffffff;">Surface<br>#10283A<br>Dark cards</div>
-        <div class="swatch" style="background-color:#02577A; color:#ffffff;">Link blue<br>#02577A<br>Links on light areas</div>
-        <div class="swatch" style="background-color:#F2F8FB; color:#0A1A24;">Light<br>#F2F8FB<br>Reading sections</div>
+        <div class="swatch swatch-primary">Primary<br>#02A9F7<br>Buttons, highlights</div>
+        <div class="swatch swatch-secondary">Secondary<br>#0A1A24<br>Nav, hero, footer</div>
+        <div class="swatch swatch-accent">Accent<br>#F5B700<br>Warnings, tap hints</div>
+        <div class="swatch swatch-surface">Surface<br>#10283A<br>Dark cards</div>
+        <div class="swatch swatch-link">Link blue<br>#02577A<br>Links on light areas</div>
+        <div class="swatch swatch-light">Light<br>#F2F8FB<br>Reading sections</div>
       </div>
 
       <h2 class="mt-5">6. Typography</h2>
       <table class="table table-striped table-hover align-middle shadow-sm">
         <thead class="table-dark"><tr><th>Use</th><th>Font</th><th>Sizes</th><th>Why</th></tr></thead>
         <tbody>
-          <tr><td>Headings</td><td style="font-weight:700;">Poppins Bold (700)</td>
+          <tr><td>Headings</td><td class="fw-bold">Poppins Bold (700)</td>
               <td>H1 48px · H2 34px · H3 24px</td><td>Modern, round letter shapes that look friendly and professional</td></tr>
           <tr><td>Body text</td><td>Poppins Regular (400) / SemiBold (600)</td>
               <td>20px (never below 17px), line height 1.7</td>
@@ -197,6 +199,5 @@
     </div>
   </div>
 
-  <script src="js/script.js"></script>
 </body>
 </html>
