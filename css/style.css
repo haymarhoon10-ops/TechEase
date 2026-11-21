@@ -307,13 +307,13 @@ a:hover {
 
 .home-screen {
   background-color: #10283A;
-  padding: 40px 18px;
+  padding: 40px 6px;
 }
 
 .home-screen p {
   color: #ffffff;
   text-align: center;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .app-grid {
@@ -328,8 +328,9 @@ a:hover {
   border: none;
   color: #ffffff;
   font-family: "Poppins", Arial, sans-serif;
-  font-size: 13px;
+  font-size: 16px;
   text-align: center;
+  padding: 0;
 }
 
 .app span {
@@ -362,7 +363,7 @@ a:hover {
 .chat-row small {
   display: block;
   color: #667;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .chat-body {
@@ -402,7 +403,7 @@ a:hover {
   border: 2px solid #ccc;
   border-radius: 22px;
   font-family: "Poppins", Arial, sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   text-align: left;
   padding: 8px 14px;
   color: #5F6B73;
