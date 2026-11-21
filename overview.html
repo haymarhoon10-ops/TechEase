@@ -50,6 +50,7 @@
     <div class="container">
 
       <h2>1. Project overview</h2>
+      <div class="table-responsive">
       <table class="table table-striped table-hover align-middle shadow-sm">
         <tbody>
           <tr><th class="label-col">Website title</th><td>TechEase: Technology Made Easy</td></tr>
@@ -68,9 +69,11 @@
               <li>Allow users to register for free workshops through an online form.</li></ol></td></tr>
         </tbody>
       </table>
+      </div>
 
       <h2 class="mt-5">2. Requirement analysis</h2>
       <h3>Functional requirements</h3>
+      <div class="table-responsive">
       <table class="table table-striped table-hover align-middle shadow-sm">
         <thead class="table-dark"><tr><th>ID</th><th>Requirement</th><th>Where</th></tr></thead>
         <tbody>
@@ -81,7 +84,9 @@
           <tr><td>FR5</td><td><strong>Call-to-action:</strong> "Join a free workshop" button linking to the registration form.</td><td>Home, Stay Safe Online</td></tr>
         </tbody>
       </table>
+      </div>
       <h3>Non-functional requirements</h3>
+      <div class="table-responsive">
       <table class="table table-striped table-hover align-middle shadow-sm">
         <thead class="table-dark"><tr><th>ID</th><th>Type</th><th>Requirement</th></tr></thead>
         <tbody>
@@ -92,6 +97,7 @@
           <tr><td>NFR5</td><td>Security</td><td>All form input is checked before it is accepted; no personal data is stored or shared with third parties.</td></tr>
         </tbody>
       </table>
+      </div>
 
       <h2 class="mt-5">3. Site map</h2>
       <img src="images/sitemap.png" class="img-fluid rounded-3 border shadow-sm mb-2" alt="Site map showing Home linked to the six other pages">
@@ -102,7 +108,7 @@
       <p class="caption">How a senior user moves through the website from entry to exit.</p>
 
       <h2 class="mt-5">5. Design plan</h2>
-      <p>Our design plan follows <strong>research → wireframes → mockups → style guide → build</strong>.
+      <p>Our design plan follows <strong>research → plan → wireframes → mockups → style guide → build → test</strong>.
          Full design decisions and the mood board are on the <a href="planning-design.html">Planning &amp; Design</a> page.</p>
 
       <h2 class="mt-5">6. Low-fidelity wireframes (all seven pages)</h2>
@@ -166,6 +172,7 @@
       </div>
 
       <h3 class="mt-4">Typography</h3>
+      <div class="table-responsive">
       <table class="table table-striped table-hover align-middle shadow-sm">
         <thead class="table-dark"><tr><th>Use</th><th>Font</th><th>Sizes</th><th>Why</th></tr></thead>
         <tbody>
@@ -176,6 +183,7 @@
               <td>Wide, open letters and extra line spacing make long text easier to read for older eyes</td></tr>
         </tbody>
       </table>
+      </div>
 
       <h3 class="mt-4">Components</h3>
       <div class="row">
@@ -208,6 +216,7 @@
       <div class="alert alert-info"><strong>Tip:</strong> Example tip box used for helpful advice.</div>
 
       <h2 class="mt-5">9. Responsive design plan</h2>
+      <div class="table-responsive">
       <table class="table table-striped table-hover align-middle shadow-sm">
         <thead class="table-dark"><tr><th>Device</th><th>Screen width</th><th>Layout</th></tr></thead>
         <tbody>
@@ -216,11 +225,13 @@
           <tr><td>Mobile</td><td>below 768px</td><td>Everything in one column; menu links wrap; text stays at least 18px.</td></tr>
         </tbody>
       </table>
+      </div>
       <p>This is done with Bootstrap classes such as <code>col-lg-4 col-md-6 col-12</code> and <code>img-fluid</code>
          for responsive images. See the mockups above for each screen size.</p>
 
       <h2 class="mt-5">Maintainability and repeat use</h2>
       <h3>How the site is built to be easy to update</h3>
+      <div class="table-responsive">
       <table class="table table-striped table-hover align-middle shadow-sm">
         <thead class="table-dark"><tr><th>What we did</th><th>Why it helps future developers</th></tr></thead>
         <tbody>
@@ -233,6 +244,7 @@
           <tr><td>Bootstrap 5 loaded from a CDN</td><td>The framework can be upgraded by changing one version number.</td></tr>
         </tbody>
       </table>
+      </div>
 
       <h3 class="mt-4">How the site encourages users to come back</h3>
       <ul>
@@ -244,6 +256,7 @@
       </ul>
 
       <h2 class="mt-5">10. AI utilisation plan</h2>
+      <div class="table-responsive">
       <table class="table table-striped table-hover align-middle shadow-sm">
         <thead class="table-dark"><tr><th>AI tool</th><th>Purpose of usage</th><th>Expected outcome</th></tr></thead>
         <tbody>
@@ -252,8 +265,10 @@
           <tr><td>GitHub Copilot (in VS Code)</td><td>Code suggestions while writing JavaScript: the phone simulator and the email check</td><td>Faster coding, with every suggestion tested and changed by us</td></tr>
         </tbody>
       </table>
+      </div>
 
       <h2 class="mt-5">AI documentation table</h2>
+      <div class="table-responsive">
       <table class="table table-striped table-hover align-middle shadow-sm">
         <thead class="table-dark"><tr><th>AI Tool</th><th>Purpose</th><th>Prompt Used</th><th>Output Generated</th><th>Modifications Made</th></tr></thead>
         <tbody>
@@ -299,12 +314,14 @@
               <td>We wrote our own error message and tested it with many wrong email addresses.</td></tr>
         </tbody>
       </table>
+      </div>
 
       <h2 class="mt-5">Ethical and legal best practices</h2>
+      <div class="table-responsive">
       <table class="table table-striped table-hover align-middle shadow-sm">
         <thead class="table-dark"><tr><th>Area</th><th>What we did</th></tr></thead>
         <tbody>
-          <tr><td>Copyright &amp; images</td><td>All of our photos were created with ChatGPT image generation, so they do not show real people or copy other people's photos. We credited every image below and say clearly which ones are AI-generated. We did not use any company or government logos.</td></tr>
+          <tr><td>Copyright &amp; images</td><td>All the photos in our guides were created with ChatGPT image generation, so they do not show real people or copy other people's photos. The only images from other websites are four screenshots on the Planning &amp; Design page, used only as design inspiration. We credited every image below and say clearly which ones are AI-generated. Our own design does not use any company or government logos.</td></tr>
           <tr><td>Accessibility</td><td>We followed WCAG guidance: high contrast, large text, alt text on all images, and messages that do not rely on colour alone.</td></tr>
           <tr><td>Privacy</td><td>The registration form only collects what is needed (name, mobile, email). In this student project the data is not stored or sent anywhere. A real version would need a privacy policy and the user's consent under Bahrain's Personal Data Protection Law (PDPL).</td></tr>
           <tr><td>Accurate information</td><td>We give general advice and point users to <strong>official</strong> websites and apps instead of copying information that may change.</td></tr>
@@ -312,6 +329,7 @@
           <tr><td>Academic integrity</td><td>All sources and media are cited, and the work was completed by our group.</td></tr>
         </tbody>
       </table>
+      </div>
 
       <h2 class="mt-5" id="credits">Sources &amp; image credits</h2>
       <ul>
@@ -321,7 +339,10 @@
         <li>Font: Poppins, Google Fonts (SIL Open Font License).</li>
         <li>Framework: Bootstrap 5.3 (MIT License), getbootstrap.com.</li>
         <li>Contrast guidance: W3C Web Content Accessibility Guidelines (WCAG) 2.1.</li>
-        <li>Mood board images: created by our group <span class="todo">[or credit the source/AI tool used]</span>.</li>
+        <li>Mood board images: created by our group with ChatGPT image generation (OpenAI).</li>
+        <li>Website screenshots (ref-govuk.jpg, ref-ageuk.jpg, ref-aarp.jpg, ref-bahrain.jpg): taken by our group in November 2026 from
+            <a href="https://www.gov.uk" target="_blank">gov.uk</a>, <a href="https://www.ageuk.org.uk" target="_blank">ageuk.org.uk</a>,
+            <a href="https://www.aarp.org" target="_blank">aarp.org</a> and <a href="https://www.bahrain.bh" target="_blank">bahrain.bh</a>, used only as design inspiration. All rights belong to their owners.</li>
       </ul>
 
     </div>
@@ -330,9 +351,7 @@
   <!-- ===== Footer ===== -->
   <div class="footer">
     <div class="container">
-      <p><strong>TechEase</strong> - Technology made easy for everyone.</p>
-      <p>Free workshops for seniors in Bahrain · <a href="mailto:hello@techease.bh">hello@techease.bh</a></p>
-      <p>© 2026 TechEase - Web Fundamentals (IT6012) Group Project, Bahrain Polytechnic. Image credits are listed on the <a href="overview.html#credits">Overview</a> page.</p>
+      <p>Bahrain Polytechnic. Image credits are listed on the <a href="overview.html#credits">Overview</a> page.</p>
     </div>
   </div>
 

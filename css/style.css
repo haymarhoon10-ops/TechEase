@@ -474,8 +474,9 @@ a:hover {
 
 .colour-grid {
   display: grid;
-  grid-template-columns: 16% 16% 16% 16% 16% 16%;
-  gap: 1%;
+  /* as many 140px+ columns as fit: 6 on desktop, 2 on a phone */
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 10px;
 }
 
 .swatch {
